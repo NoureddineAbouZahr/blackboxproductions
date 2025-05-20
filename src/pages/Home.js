@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from '../components/HeroSection';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import './Home.css';
-
+import Contact from '../components/Contact';
 function Home() {
   return (
     <div>
@@ -26,8 +26,9 @@ function Home() {
       </section>
 
       <section id="contact" className="scroll-section">
-        <h2>Contact Us</h2>
-        <p>Have an idea? Let’s collaborate. Reach out to us anytime.</p>
+        
+        <Contact />
+        
       </section>
 
       <ScrollToTopButton />

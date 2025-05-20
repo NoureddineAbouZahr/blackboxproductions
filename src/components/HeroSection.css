@@ -1,58 +1,78 @@
 .hero {
-   background-image: url('../assets/herobg.png'); 
+  background-image: url('../assets/herobg1.jpeg');
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
-  padding: 140px 20px;
+  padding: 180px 20px;
   position: relative;
+  font-family: 'Century Gothic', 'Arial', sans-serif;
+  overflow: hidden;
 }
 
-/* .hero::after {
-  content: '';
+/* Overlay for improved readability */
+.hero::before {
+  content: "";
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-} */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
 
+/* Slogan styling */
 .hero-slogan {
   position: relative;
   margin-top: 0;
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  font-size: 48px;
+  /* font-style: italic; */
+  font-weight: 800;
+  letter-spacing: 2px;
   z-index: 1;
 }
+
+/* Subtext styling */
 .hero-subtext {
   position: relative;
-  font-size: 18px;
-  margin-top: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 1px;
   z-index: 1;
 }
 
-/* .hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.6); 
-  z-index: 1;
-}
-.hero-overlay {
+/* Optional: CTA button */
+.hero-cta {
   position: relative;
-  z-index: 2;
-} */
-/* .hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.6); 
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #7a4e7e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
   z-index: 1;
 }
-d
-fdfd.hero-overlay {
-  position: relative;
-  z-index: 2;
-} */
 
+.hero-cta:hover {
+  background-color: #5a3a5e;
+}
 
+/* Optional: Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  animation: bounce 2s infinite;
+  z-index: 1;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(10px); }
+}
