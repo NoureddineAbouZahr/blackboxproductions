@@ -1,0 +1,26 @@
+.scroll-section {
+    height: 100vh;
+    padding: 80px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #about {
+    background-color: #f5f5f5;
+  }
+  
+  #services {
+    background-color: #eaeaea;
+  }
+  
+  #projects {
+    background-color: #dcdcdc;
+  }
+  
+  #contact {
+    background-color: #c0c0c0;
+  }
+  
